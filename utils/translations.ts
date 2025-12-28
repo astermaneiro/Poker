@@ -1,0 +1,83 @@
+import { HandRank } from '../types';
+
+export const HAND_NAMES: Record<string, Record<HandRank, string>> = {
+  en: {
+    [HandRank.HighCard]: 'High Card',
+    [HandRank.Pair]: 'Pair',
+    [HandRank.TwoPair]: 'Two Pair',
+    [HandRank.ThreeOfAKind]: 'Three of a Kind',
+    [HandRank.Straight]: 'Straight',
+    [HandRank.Flush]: 'Flush',
+    [HandRank.FullHouse]: 'Full House',
+    [HandRank.FourOfAKind]: 'Four of a Kind',
+    [HandRank.StraightFlush]: 'Straight Flush',
+    [HandRank.RoyalFlush]: 'Royal Flush',
+  },
+  ru: {
+    [HandRank.HighCard]: 'Старшая карта',
+    [HandRank.Pair]: 'Пара',
+    [HandRank.TwoPair]: 'Две пары',
+    [HandRank.ThreeOfAKind]: 'Сет (Тройка)',
+    [HandRank.Straight]: 'Стрит',
+    [HandRank.Flush]: 'Флеш',
+    [HandRank.FullHouse]: 'Фулл-хаус',
+    [HandRank.FourOfAKind]: 'Каре',
+    [HandRank.StraightFlush]: 'Стрит-флеш',
+    [HandRank.RoyalFlush]: 'Роял-флеш',
+  }
+};
+
+export const UI_TEXT = {
+  en: {
+    round: 'Round',
+    config: 'Config',
+    cheatSheet: 'Cheat Sheet',
+    handRankings: 'Hand Rankings',
+    selectWinner: 'Select the winning hand',
+    selectWinnerTimer: 'Select Winner',
+    roundWon: 'Round Won',
+    roundLost: 'Round Lost',
+    betterHand: 'Winner:',
+    continue: 'Tap anywhere to continue',
+    boardHidden: 'BOARD HIDDEN',
+    win: 'WIN',
+    settingsTitle: 'Configuration',
+    difficulty: 'Difficulty (Opponents)',
+    currentOpponents: 'opponents',
+    showHandName: 'Show Hand Name',
+    showHandNameDesc: 'Display combination name after result.',
+    autoAdvance: 'Auto-Advance Rounds',
+    autoAdvanceDesc: 'Next hand loads automatically.',
+    hideBoard: 'Hide Board (Hardcore)',
+    hideBoardDesc: 'Pre-flop practice only.',
+    stressTimer: 'Stress Timer',
+    stressTimerDesc: 'Adds a 10s countdown.',
+    close: 'Press Space or Click outside to close'
+  },
+  ru: {
+    round: 'Раунд',
+    config: 'Меню',
+    cheatSheet: 'Справка',
+    handRankings: 'Комбинации',
+    selectWinner: 'Выберите победную руку',
+    selectWinnerTimer: 'Выберите победителя',
+    roundWon: 'Победа',
+    roundLost: 'Поражение',
+    betterHand: 'Победитель:',
+    continue: 'Нажмите в любом месте',
+    boardHidden: 'КАРТЫ СКРЫТЫ',
+    win: 'ВИН',
+    settingsTitle: 'Настройки',
+    difficulty: 'Сложность (Оппоненты)',
+    currentOpponents: 'опп.',
+    showHandName: 'Название руки',
+    showHandNameDesc: 'Показывать название комбинации.',
+    autoAdvance: 'Авто-переход',
+    autoAdvanceDesc: 'Следующий раунд автоматически.',
+    hideBoard: 'Скрыть стол (Хардкор)',
+    hideBoardDesc: 'Тренировка префлопа.',
+    stressTimer: 'Таймер',
+    stressTimerDesc: 'Лимит 10 секунд на ход.',
+    close: 'Нажмите пробел или снаружи чтобы закрыть'
+  }
+};
